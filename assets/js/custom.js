@@ -60,7 +60,7 @@ $(document).ready(function () {
         delay: 3000,
         disableOnInteraction: false,
       },
-      
+
       navigation: {
         nextEl: "#event-slider .swiper-button-next",
         prevEl: "#event-slider .swiper-button-prev",
@@ -160,4 +160,121 @@ $(document).ready(function () {
     }
   });
   //   mobile menu handler
+
+  // format numbers in front end
+  $(".format-number").each(function () {
+    var num = parseFloat($(this).text());
+    var formatted = num.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    $(this).text(formatted);
+  });
+  // format numbers in front end
+
+  // single product price handler
+  var firstPrice = parseInt($("#product-price").text().replace(/,/g, ""));
+  $("#calc #increase").click(function () {
+    var qtyVal = parseInt($("#calc #qty").val());
+    if (qtyVal < 10) {
+      $("#calc #qty").val(qtyVal + 1);
+      var price = parseInt($("#product-price").text().replace(/,/g, ""));
+      $("#product-price").text(price + firstPrice);
+      var newPrice = parseFloat($("#product-price").text());
+      var newFormatted = newPrice
+        .toFixed(0)
+        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      $("#product-price").text(newFormatted);
+    }
+  });
+  $("#calc #decrease").click(function () {
+    var qtyVal = parseInt($("#calc #qty").val());
+    if (qtyVal <= 10 && qtyVal > 1) {
+      $("#calc #qty").val(qtyVal - 1);
+      var price = parseInt($("#product-price").text().replace(/,/g, ""));
+      $("#product-price").text(price - firstPrice);
+      var newPrice = parseFloat($("#product-price").text());
+      var newFormatted = newPrice
+        .toFixed(0)
+        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      $("#product-price").text(newFormatted);
+    }
+  });
+  // single product price handler
+
+  // buy button modal handler
+  $("#order-submit").click(function () {
+    $("#buy-cont").removeClass("opacity-0 invisible");
+  });
+
+  $("#buy-cont #closer").click(function () {
+    $("#buy-cont").addClass("opacity-0 invisible");
+  });
+  // buy button modal handler
+
+  // buy phone number handler
+  $("#buy-cont .phone-li").click(function () {
+    if ($(this).hasClass("active")) {
+    } else {
+      $("#buy-cont .phone-li").removeClass("active");
+      $(this).addClass("active");
+      var phone = $(this).attr("data-target");
+      $("#buy-cont #buy-phone").text("021-" + phone);
+      $("#buy-cont #buy-phone").attr("href", "tel:021" + phone);
+    }
+  });
+  // buy phone number handler
+
+  // shortlink handler
+  $("#shortlink").click(function () {
+    var dummy = document.createElement("input"),
+      text = window.location.href;
+    document.body.appendChild(dummy);
+    dummy.value = text;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
+    $(this).find("span").text("کپی شد");
+  });
+  // shortlink handler
+
+  //   related products slider
+  if (window.innerWidth >= 1024) {
+    var swiper = new Swiper("#related-slider", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: "#related-slider .swiper-button-next",
+        prevEl: "#related-slider .swiper-button-prev",
+      },
+    });
+  } else if (window.innerWidth < 1024 && window.innerWidth >= 768) {
+    var swiper = new Swiper("#related-slider", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: "#related-slider .swiper-button-next",
+        prevEl: "#related-slider .swiper-button-prev",
+      },
+    });
+  } else if (window.innerWidth < 768) {
+    var swiper = new Swiper("#related-slider", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: "#related-slider .swiper-button-next",
+        prevEl: "#related-slider .swiper-button-prev",
+      },
+    });
+  }
+  // related products slider
 });

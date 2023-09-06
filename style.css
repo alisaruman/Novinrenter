@@ -32,6 +32,10 @@
     font-display: swap;
 }
 
+.appearance-none {
+    -moz-appearance: textfield !important;
+}
+
 body * {
     outline: none !important;
 }
@@ -69,6 +73,34 @@ i[class*="icon-"] {
     background-image: url('images/icons/call.svg');
 }
 
+.icon-call2 {
+    background-image: url('images/icons/call2.svg');
+}
+
+.icon-pointer {
+    background-image: url('images/icons/pointer.svg');
+}
+
+.icon-wave {
+    background-image: url('images/icons/wave.svg');
+}
+
+.icon-share {
+    background-image: url('images/icons/share.svg');
+}
+
+.icon-link {
+    background-image: url('images/icons/link.svg');
+}
+
+.icon-telegram2 {
+    background-image: url('images/icons/telegram2.svg');
+}
+
+.icon-whatsapp {
+    background-image: url('images/icons/whatsapp.svg');
+}
+
 .icon-search {
     background-image: url('images/icons/search.svg');
 }
@@ -87,6 +119,10 @@ i[class*="icon-"] {
 
 .icon-chevron-bottom {
     background-image: url('images/icons/chevron-bottom.svg');
+}
+
+.icon-chevron-left {
+    background-image: url('images/icons/chevron-left.svg');
 }
 
 .icon-chevron-left2 {
@@ -111,6 +147,10 @@ i[class*="icon-"] {
 
 .icon-close {
     background-image: url('images/icons/close.svg');
+}
+
+.icon-close2 {
+    background-image: url('images/icons/close2.svg');
 }
 
 .icon-microphone {
@@ -177,7 +217,7 @@ header li.menu-item-has-children>a::after {
 
 /* index events */
 
-#events div[class*="swiper-button-"] {
+#events div[class*="swiper-button-"], #related-products div[class*="swiper-button-"] {
     width: 42px;
     height: 42px;
     background-color: #fff;
@@ -186,7 +226,7 @@ header li.menu-item-has-children>a::after {
     border: 1px solid #eaeaea;
 }
 
-#events div[class*="swiper-button-"]::after {
+#events div[class*="swiper-button-"]::after, #related-products div[class*="swiper-button-"]::after {
     font-size: 16px;
     color: #343434;
 }
@@ -294,6 +334,21 @@ header li.menu-item-has-children>a::after {
 }
 
 /* single content */
+
+/* product buy cont */
+
+#buy-cont .phone-li.active::after {
+    content: '';
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #39b4e5;
+    top: 95%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+}
+
+/* product buy cont */
 
 /* queries */
 
