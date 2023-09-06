@@ -86,7 +86,7 @@
                     <a href="#" title="نوین رنتر">
                         <img src="images/global/logo.svg" alt="نوین رنتر" class="w-36 h-auto" />
                     </a>
-                    <nav class="font-irsansExtra text-sm">
+                    <nav class="hidden lg:block font-irsansExtra text-sm">
                         <ul class="list-none flex items-center gap-5">
                             <li class="group menu-item-has-children">
                                 <a href="#">تجهیزات مراسم</a>
@@ -190,7 +190,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="flex items-center gap-6">
+                <div class="hidden lg:flex items-center gap-6">
                     <i class="icon-search w-5 h-5 cursor-pointer"></i>
                     <ul class="list-none flex items-center gap-5 font-irsans text-sm text-dark1">
                         <li>
@@ -206,6 +206,137 @@
                         تماس با ما
                     </a>
                 </div>
+                <!-- mobile hamburger -->
+                <div id="hamburger" class="block lg:hidden cursor-pointer z-50">
+                    <div class="dash1 w-7 h-1 bg-secondary my-1 duration-500 rounded"></div>
+                    <div class="dash2 w-7 h-1 bg-secondary my-1 duration-500 rounded"></div>
+                    <div class="dash3 w-7 h-1 bg-secondary my-1 duration-500 rounded"></div>
+                </div>
+                <!-- mobile hamburger -->
+
+                <!-- mobile menu -->
+                <div id="mobile-menu"
+                    class="fixed lg:hidden py-5 px-3 top-0 invisible -right-full opacity-0 w-9/12 bg-secondary h-full z-30 duration-500 after:fixed after:w-3/12 after:h-full after:top-0 after:left-0 after:duration-100 after:backdrop-blur">
+                    <div class="searchbox relative w-full border border-primary p-3 rounded-10">
+                        <form>
+                            <input type="text" name="s" id="s"
+                                class="w-full border-0 placeholder-gray2 text-sm bg-transparent text-light1"
+                                placeholder="جستجو ...">
+                        </form>
+                    </div>
+
+                    <nav class="w-full py-5 max-h-[80vh] overflow-y-scroll">
+                        <ul class="list-none flex flex-col">
+
+                            <li class="py-3 menu-item-has-children">
+                                <a href="#"
+                                    class="flex items-center gap-2">
+                                    <span class="text-white text-sm flex items-center gap-2">دستگاه صوتی</span>
+                                </a>
+                                <ul
+                                    class="sub-menu w-full text-white text-sm leading-9 rounded-10 bg-darkBlue px-3 invisible max-h-0 opacity-0 duration-300">
+                                    <li>
+                                        <a href="#" class="duration-200">دستگاه ترجمه همزمان</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="duration-200">پکیج های صوتی همایش</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="duration-200">پکیج های صوتی جشن</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="duration-200">پکیج های صوتی مذهبی</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="py-3 menu-item-has-children">
+                                <a href="#"
+                                    class="flex items-center gap-2">
+                                    <span class="text-white text-sm flex items-center gap-2">لوازم تصویری</span>
+                                </a>
+                                <ul
+                                    class="sub-menu w-full text-white text-sm leading-9 rounded-10 bg-darkBlue px-3 invisible max-h-0 opacity-0 duration-300">
+                                    <li>
+                                        <a href="#" class="duration-200">دستگاه ترجمه همزمان</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="duration-200">پکیج های صوتی همایش</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="duration-200">پکیج های صوتی جشن</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="duration-200">پکیج های صوتی مذهبی</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="py-3 menu-item-has-children">
+                                <a href="#"
+                                    class="flex items-center gap-2">
+                                    <span class="text-white text-sm flex items-center gap-2">دیگر تجهیزات</span>
+                                </a>
+                                <ul
+                                    class="sub-menu w-full text-white text-sm leading-9 rounded-10 bg-darkBlue px-3 invisible max-h-0 opacity-0 duration-300">
+                                    <li>
+                                        <a href="#" class="duration-200">دستگاه ترجمه همزمان</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="duration-200">پکیج های صوتی همایش</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="duration-200">پکیج های صوتی جشن</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="duration-200">پکیج های صوتی مذهبی</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="py-3 menu-item-has-children">
+                                <a href="#"
+                                    class="flex items-center gap-2">
+                                    <span class="text-white text-sm flex items-center gap-2">دستگاه صوتی</span>
+                                </a>
+                                <ul
+                                    class="sub-menu w-full text-white text-sm leading-9 rounded-10 bg-darkBlue px-3 invisible max-h-0 opacity-0 duration-300">
+                                    <li>
+                                        <a href="#" class="duration-200">دستگاه ترجمه همزمان</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="duration-200">پکیج های صوتی همایش</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="duration-200">پکیج های صوتی جشن</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="duration-200">پکیج های صوتی مذهبی</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="py-3">
+                                <a href="#"
+                                    class="flex items-center gap-2">
+                                    <span class="text-white text-sm">بلاگ</span>
+                                </a>
+                            </li>
+                            <li class="py-3">
+                                <a href="#"
+                                    class="flex items-center gap-2">
+                                    <span class="text-white text-sm">نمونه کارها</span>
+                                </a>
+                            </li>
+                            <li class="py-3">
+                                <a href="#"
+                                    class="flex items-center gap-2">
+                                    <span class="text-white text-sm">تماس با ما</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+                <!-- mobile menu -->
+
             </div>
         </div>
     </header>
@@ -214,35 +345,35 @@
     <!-- slider -->
     <section id="slider">
         <div class="container">
-            <div class="w-full flex items-center justify-between">
+            <div class="w-full flex flex-col md:flex-row items-center justify-between">
                 <div class="w-full md:w-6/12 lg:w-5/12">
-                    <h1 class="text-black font-irsansExtra text-4xl leading-[67px]">
+                    <h1 class="text-black font-irsansExtra text-xl lg:text-4xl leading-8 lg:leading-[67px]">
                         اجاره وسایل و تجهیزات نمایشگاهی و مراسم در تهران
                     </h1>
-                    <p class="font-irsans text-dark1 text-base my-5">
+                    <p class="font-irsans text-dark1 text-sm lg:text-base my-5">
                         شما می توانید با اجاره روزانه وسایل از این سایت به راحتی هر آنچه برای اجرای یک مراسم ایده آل یا
                         یک نمای شگاه درخور نیاز دارید را تهیه کنید.
                     </p>
-                    <div class="flex gap-3">
+                    <div class="flex justify-center lg:justify-start gap-3">
                         <a href="#"
-                            class="flex items-center justify-center text-white text-base font-irsans w-36 py-4 bg-gradient-to-l from-primary to-secondary rounded-10">
+                            class="flex items-center justify-center text-white text-base font-irsans w-28 lg:w-36 py-2 lg:py-4 bg-gradient-to-l from-primary to-secondary rounded-10">
                             تماس با ما
                         </a>
                         <a href="#"
-                            class="flex items-center justify-center text-dark1 text-base font-irsans w-36 py-4 rounded-10 border border-light1">
+                            class="flex items-center justify-center text-dark1 text-base font-irsans w-28 lg:w-36 py-2 lg:py-4 rounded-10 border border-light1">
                             درباره ما
                         </a>
                     </div>
                 </div>
                 <div class="w-full md:w-6/12">
 
-                    <div class="swiper mySwiper" id="main-slider">
+                    <div class="swiper mySwiper mt-6 lg:mt-0" id="main-slider">
                         <div class="swiper-wrapper">
 
                             <div class="swiper-slide relative">
                                 <img src="images/temp/slide1.png" alt="محصول" draggable="false" class="w-full h-auto" />
                                 <a href="#"
-                                    class="absolute top-3/4 right-0 bg-white rounded-100 shadow-sliderContent flex items-center gap-3 pt-5 pb-6 pr-7 pl-10">
+                                    class="absolute top-2/4 lg:top-3/4 right-3 lg:right-0 bg-white rounded-100 shadow-sliderContent flex items-center gap-3 pt-5 pb-6 pr-7 pl-10">
                                     <div
                                         class="w-11 h-11 flex items-center justify-center bg-primary rounded-15 z-20 shadow-slider">
                                         <i class="icon-printer w-5 h-5"></i>
@@ -257,7 +388,7 @@
                             <div class="swiper-slide relative">
                                 <img src="images/temp/slide1.png" alt="محصول" draggable="false" class="w-full h-auto" />
                                 <a href="#"
-                                    class="absolute top-3/4 right-0 bg-white rounded-100 shadow-sliderContent flex items-center gap-3 pt-5 pb-6 pr-7 pl-10">
+                                    class="absolute top-2/4 lg:top-3/4 right-3 lg:right-0 bg-white rounded-100 shadow-sliderContent flex items-center gap-3 pt-5 pb-6 pr-7 pl-10">
                                     <div
                                         class="w-11 h-11 flex items-center justify-center bg-primary rounded-15 z-20 shadow-slider">
                                         <i class="icon-printer w-5 h-5"></i>
@@ -281,12 +412,12 @@
     <!-- index cats -->
     <section id="index-cats" class="py-5">
         <div class="container">
-            <div class="block pt-6 pb-3 font-bakhExtra text-black text-xl">
+            <div class="block pt-6 pb-3 font-bakhExtra text-black text-lg lg:text-xl">
                 دسته‌بندی محصولات
             </div>
-            <div class="w-full grid grid-cols-1 lg:grid-cols-4 grid-rows-1 lg:grid-rows-2 gap-5">
+            <div class="w-full block md:grid md:grid-cols-3 lg:grid-cols-4 grid-rows-2 gap-5">
 
-                <div class="item1 group relative">
+                <div class="item1 group relative mb-5 lg:mb-0">
                     <a href="#">
                         <img src="images/temp/cat1.png" alt="کت"
                             class="w-full h-full rounded-15 duration-300 group-hover:brightness-50" />
@@ -300,7 +431,7 @@
                     </a>
                 </div>
 
-                <div class="item2 group relative">
+                <div class="item2 group relative mb-5 lg:mb-0">
                     <a href="#">
                         <img src="images/temp/cat2.png" alt="کت"
                             class="w-full h-full rounded-15 duration-300 group-hover:brightness-50" />
@@ -318,7 +449,7 @@
                     </a>
                 </div>
 
-                <div class="item3 group relative">
+                <div class="item3 group relative mb-5 lg:mb-0">
                     <a href="#">
                         <img src="images/temp/cat2.png" alt="کت"
                             class="w-full h-full rounded-15 duration-300 group-hover:brightness-50" />
@@ -336,7 +467,7 @@
                     </a>
                 </div>
 
-                <div class="item4 group relative">
+                <div class="item4 group relative mb-5 lg:mb-0">
                     <a href="#">
                         <img src="images/temp/cat4.png" alt="کت"
                             class="w-full h-full rounded-15 duration-300 group-hover:brightness-50" />
@@ -350,7 +481,7 @@
                     </a>
                 </div>
 
-                <div class="item5 group relative">
+                <div class="item5 group relative mb-5 lg:mb-0">
                     <a href="#">
                         <img src="images/temp/cat5.png" alt="کت"
                             class="w-full h-full rounded-15 duration-300 group-hover:brightness-50" />
@@ -379,7 +510,7 @@
         </div>
 
         <div class="container">
-            <div class="block pt-6 font-bakhExtra text-black text-xl">
+            <div class="block pt-6 font-bakhExtra text-black text-lg lg:text-xl">
                 نوین رنتر در کنار شما
             </div>
 
@@ -459,7 +590,7 @@
     <!-- faq -->
     <section id="faq" class="py-5">
         <div class="container">
-            <div class="block pt-3 pb-5 font-bakhExtra text-black text-xl">
+            <div class="block pt-3 pb-5 font-bakhExtra text-black text-lg lg:text-xl">
                 سوالات متداول
             </div>
             <div class="w-full flex flex-wrap">
@@ -467,10 +598,10 @@
 
                     <div class="faq-item rounded-15 border border-gray2 py-6 px-4 mb-4 cursor-pointer">
                         <div class="faq-title w-full flex items-center justify-between">
-                            <span class="text-black text-base font-irsansExtra">مدت زمان اجاره چقدر است؟</span>
+                            <span class="text-black text-sm lg:text-base font-irsansExtra">مدت زمان اجاره چقدر است؟</span>
                             <i class="icon-chevron-bottom-2 w-5 h-5 duration-200"></i>
                         </div>
-                        <p class="text-sm text-dark1 duration-300 max-h-0 overflow-hidden">
+                        <p class="text-xs lg:text-sm text-dark1 duration-300 max-h-0 overflow-hidden">
                             لطفا توجه داشته باشید که شرایط و سیاست‌های اجاره محصولات ممکن است بسته به نوع محصول و شرکت
                             یا
                             فروشنده متفاوت باشد. برای اطلاعات دقیق‌تر، بهتر است با شرکت یا فروشنده مورد نظر تماس بگیرید.
@@ -479,10 +610,10 @@
 
                     <div class="faq-item rounded-15 border border-gray2 py-6 px-4 mb-4 cursor-pointer">
                         <div class="faq-title w-full flex items-center justify-between">
-                            <span class="text-black text-base font-irsansExtra">مدت زمان اجاره چقدر است؟</span>
+                            <span class="text-black text-sm lg:text-base font-irsansExtra">مدت زمان اجاره چقدر است؟</span>
                             <i class="icon-chevron-bottom-2 w-5 h-5 duration-200"></i>
                         </div>
-                        <p class="text-sm text-dark1 duration-300 max-h-0 overflow-hidden">
+                        <p class="text-xs lg:text-sm text-dark1 duration-300 max-h-0 overflow-hidden">
                             لطفا توجه داشته باشید که شرایط و سیاست‌های اجاره محصولات ممکن است بسته به نوع محصول و شرکت
                             یا
                             فروشنده متفاوت باشد. برای اطلاعات دقیق‌تر، بهتر است با شرکت یا فروشنده مورد نظر تماس بگیرید.
@@ -491,10 +622,10 @@
 
                     <div class="faq-item rounded-15 border border-gray2 py-6 px-4 mb-4 cursor-pointer">
                         <div class="faq-title w-full flex items-center justify-between">
-                            <span class="text-black text-base font-irsansExtra">مدت زمان اجاره چقدر است؟</span>
+                            <span class="text-black text-sm lg:text-base font-irsansExtra">مدت زمان اجاره چقدر است؟</span>
                             <i class="icon-chevron-bottom-2 w-5 h-5 duration-200"></i>
                         </div>
-                        <p class="text-sm text-dark1 duration-300 max-h-0 overflow-hidden">
+                        <p class="text-xs lg:text-sm text-dark1 duration-300 max-h-0 overflow-hidden">
                             لطفا توجه داشته باشید که شرایط و سیاست‌های اجاره محصولات ممکن است بسته به نوع محصول و شرکت
                             یا
                             فروشنده متفاوت باشد. برای اطلاعات دقیق‌تر، بهتر است با شرکت یا فروشنده مورد نظر تماس بگیرید.
@@ -506,10 +637,10 @@
 
                     <div class="faq-item rounded-15 border border-gray2 py-6 px-4 mb-4 cursor-pointer">
                         <div class="faq-title w-full flex items-center justify-between">
-                            <span class="text-black text-base font-irsansExtra">مدت زمان اجاره چقدر است؟</span>
+                            <span class="text-black text-sm lg:text-base font-irsansExtra">مدت زمان اجاره چقدر است؟</span>
                             <i class="icon-chevron-bottom-2 w-5 h-5 duration-200"></i>
                         </div>
-                        <p class="text-sm text-dark1 duration-300 max-h-0 overflow-hidden">
+                        <p class="text-xs lg:text-sm text-dark1 duration-300 max-h-0 overflow-hidden">
                             لطفا توجه داشته باشید که شرایط و سیاست‌های اجاره محصولات ممکن است بسته به نوع محصول و شرکت
                             یا
                             فروشنده متفاوت باشد. برای اطلاعات دقیق‌تر، بهتر است با شرکت یا فروشنده مورد نظر تماس بگیرید.
@@ -518,10 +649,10 @@
 
                     <div class="faq-item rounded-15 border border-gray2 py-6 px-4 mb-4 cursor-pointer">
                         <div class="faq-title w-full flex items-center justify-between">
-                            <span class="text-black text-base font-irsansExtra">مدت زمان اجاره چقدر است؟</span>
+                            <span class="text-black text-sm lg:text-base font-irsansExtra">مدت زمان اجاره چقدر است؟</span>
                             <i class="icon-chevron-bottom-2 w-5 h-5 duration-200"></i>
                         </div>
-                        <p class="text-sm text-dark1 duration-300 max-h-0 overflow-hidden">
+                        <p class="text-xs lg:text-sm text-dark1 duration-300 max-h-0 overflow-hidden">
                             لطفا توجه داشته باشید که شرایط و سیاست‌های اجاره محصولات ممکن است بسته به نوع محصول و شرکت
                             یا
                             فروشنده متفاوت باشد. برای اطلاعات دقیق‌تر، بهتر است با شرکت یا فروشنده مورد نظر تماس بگیرید.
@@ -530,10 +661,10 @@
 
                     <div class="faq-item rounded-15 border border-gray2 py-6 px-4 mb-4 cursor-pointer">
                         <div class="faq-title w-full flex items-center justify-between">
-                            <span class="text-black text-base font-irsansExtra">مدت زمان اجاره چقدر است؟</span>
+                            <span class="text-black text-sm lg:text-base font-irsansExtra">مدت زمان اجاره چقدر است؟</span>
                             <i class="icon-chevron-bottom-2 w-5 h-5 duration-200"></i>
                         </div>
-                        <p class="text-sm text-dark1 duration-300 max-h-0 overflow-hidden">
+                        <p class="text-xs lg:text-sm text-dark1 duration-300 max-h-0 overflow-hidden">
                             لطفا توجه داشته باشید که شرایط و سیاست‌های اجاره محصولات ممکن است بسته به نوع محصول و شرکت
                             یا
                             فروشنده متفاوت باشد. برای اطلاعات دقیق‌تر، بهتر است با شرکت یا فروشنده مورد نظر تماس بگیرید.
@@ -553,38 +684,38 @@
         <div class="container">
             <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-8 p-5 bg-white rounded-15 shadow-main2">
 
-                <div class="flex gap-2 items-center">
+                <div class="flex flex-col lg:flex-row gap-2 items-center">
                     <div
                         class="w-16 h-16 bg-gradient-to-tr from-blue2 to-blue1 flex items-center justify-center rounded-20 shadow-advantage">
                         <i class="icon-printer w-9 h-9"></i>
                     </div>
                     <div>
-                        <p class="font-irsansExtra text-lg text-darkBlue2 mb-1">رزرو سریع</p>
-                        <p class="font-irsans text-xs text-gray1 leading-5">
+                        <p class="font-irsansExtra text-lg text-darkBlue2 mb-1 text-center lg:text-right">رزرو سریع</p>
+                        <p class="font-irsans text-xs text-gray1 leading-5 text-center lg:text-right">
                             رزرو محصول به معنای رزرو کردن یک محصول یا کالا به صورت پیش‌فروش است
                         </p>
                     </div>
                 </div>
-                <div class="flex gap-2 items-center">
+                <div class="flex flex-col lg:flex-row gap-2 items-center">
                     <div
                         class="w-16 h-16 bg-gradient-to-tr from-blue2 to-blue1 flex items-center justify-center rounded-20 shadow-advantage">
                         <i class="icon-printer w-9 h-9"></i>
                     </div>
                     <div>
-                        <p class="font-irsansExtra text-lg text-darkBlue2 mb-1">قیمت‌های مناسب</p>
-                        <p class="font-irsans text-xs text-gray1 leading-5">
+                        <p class="font-irsansExtra text-lg text-darkBlue2 mb-1 text-center lg:text-right">قیمت‌های مناسب</p>
+                        <p class="font-irsans text-xs text-gray1 leading-5 text-center lg:text-right">
                             برای کسب اطلاعات دقیق‌تر و بهترین قیمت‌ها، معمولاً توصیه می‌شود
                         </p>
                     </div>
                 </div>
-                <div class="flex gap-2 items-center">
+                <div class="flex flex-col lg:flex-row gap-2 items-center">
                     <div
                         class="w-16 h-16 bg-gradient-to-tr from-blue2 to-blue1 flex items-center justify-center rounded-20 shadow-advantage">
                         <i class="icon-printer w-9 h-9"></i>
                     </div>
                     <div>
-                        <p class="font-irsansExtra text-lg text-darkBlue2 mb-1">کارشناسان مجرب</p>
-                        <p class="font-irsans text-xs text-gray1 leading-5">
+                        <p class="font-irsansExtra text-lg text-darkBlue2 mb-1 text-center lg:text-right">کارشناسان مجرب</p>
+                        <p class="font-irsans text-xs text-gray1 leading-5 text-center lg:text-right">
                             کارشناسان مجرب معمولاً توانایی‌ها و آگاهی فنی بالا، تحلیل و ارزیابی دقیق
                         </p>
                     </div>
@@ -599,21 +730,21 @@
     <section id="cta" class="mb-10">
         <div class="container">
             <div class="parent py-11 rounded-10">
-                <p class="text-center font-irsansExtra text-white mb-6 text-4xl">پاسخگوی شما هستیم</p>
-                <ul class="w-full list-none flex items-center justify-center font-irsans text-2xl text-white">
-                    <li class="py-2 px-5 border-r border-gray3 first:border-0">
+                <p class="text-center font-irsansExtra text-white mb-6 text-xl lg:text-4xl">پاسخگوی شما هستیم</p>
+                <ul class="w-full list-none flex flex-col lg:flex-row items-center justify-center font-irsans text-2xl text-white">
+                    <li class="py-2 px-5 lg:border-r border-gray3 first:border-0">
                         <a href="tel:09121234567">۰۹۱۲۹۵۶۰۴۹۱</a>
                     </li>
-                    <li class="py-2 px-5 border-r border-gray3 first:border-0">
+                    <li class="py-2 px-5 lg:border-r border-gray3 first:border-0">
                         <a href="tel:09121234567">۰۹۱۲۹۵۶۰۴۹۱</a>
                     </li>
-                    <li class="py-2 px-5 border-r border-gray3 first:border-0">
+                    <li class="py-2 px-5 lg:border-r border-gray3 first:border-0">
                         <a href="tel:09121234567">۰۹۱۲۹۵۶۰۴۹۱</a>
                     </li>
-                    <li class="py-2 px-5 border-r border-gray3 first:border-0">
+                    <li class="py-2 px-5 lg:border-r border-gray3 first:border-0">
                         <a href="tel:09121234567">۰۹۱۲۹۵۶۰۴۹۱</a>
                     </li>
-                    <li class="py-2 px-5 border-r border-gray3 first:border-0">
+                    <li class="py-2 px-5 lg:border-r border-gray3 first:border-0">
                         <a href="tel:09121234567">۰۹۱۲۹۵۶۰۴۹۱</a>
                     </li>
                 </ul>
@@ -627,7 +758,7 @@
         <div class="container">
             <div class="w-full p-5 bg-white shadow-main2 rounded-10">
 
-                <div class="w-full flex gap-12">
+                <div class="w-full flex flex-col lg:flex-row gap-12">
                     <div class="w-full lg:w-4/12">
                         <img src="images/global/logo.svg" alt="نوین رنتر" class="w-36 h-auto mb-5" />
                         <h3 class="text-dark1 font-irsansExtra text-base">نوین رنتر، پلتفرم اجاره</h3>
@@ -639,10 +770,10 @@
                             آورد و با استفاده مشترک از منابع ، بهینه تر زندگی کنیم.
                         </p>
                     </div>
-                    <div class="w-full lg:w-6/12 flex justify-between">
+                    <div class="w-full lg:w-6/12 flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between">
                         <div class="w-full lg:w-4/12">
-                            <div class="text-blue1 font-irsansExtra text-base mb-6">دسترسی سریع</div>
-                            <ul class="list-none font-irsans text-md text-dark1 leading-9">
+                            <div class="text-blue1 font-irsansExtra text-base mb-2 lg:mb-6 text-center lg:text-right">دسترسی سریع</div>
+                            <ul class="list-none font-irsans text-md text-dark1 leading-9 text-center lg:text-right">
                                 <li>
                                     <a href="#" class="duration-200 hover:text-blue1">تجهیزات مراسم</a>
                                 </li>
@@ -661,8 +792,8 @@
                             </ul>
                         </div>
                         <div class="w-full lg:w-6/12">
-                            <div class="text-blue1 font-irsansExtra text-base mb-6">وبلاگ</div>
-                            <ul class="list-none font-irsans text-md text-dark1 leading-9">
+                            <div class="text-blue1 font-irsansExtra text-base mb-2 lg:mb-6 text-center lg:text-right">وبلاگ</div>
+                            <ul class="list-none font-irsans text-md text-dark1 leading-9 text-center lg:text-right">
                                 <li>
                                     <a href="#" class="duration-200 hover:text-blue1">عنوان مقاله وبلاگ شماره یک</a>
                                 </li>
@@ -682,22 +813,22 @@
                         </div>
                     </div>
                     <div class="w-full lg:w-2/12">
-                        <div class="text-blue1 font-irsansExtra text-base mb-6">شبکه‌های اجتماعی</div>
+                        <div class="text-blue1 font-irsansExtra text-base mb-2 lg:mb-6 text-center lg:text-right">شبکه‌های اجتماعی</div>
                         <ul class="list-none font-irsans text-md text-dark1 leading-9" dir="ltr">
                             <li>
-                                <a href="#" class="duration-200 hover:text-blue1 flex items-center gap-1">
+                                <a href="#" class="duration-200 hover:text-blue1 flex justify-center lg:justify-start items-center gap-1">
                                     <i class="icon-instagram w-6 h-6"></i>
                                     novinrenter
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="duration-200 hover:text-blue1 flex items-center gap-1">
+                                <a href="#" class="duration-200 hover:text-blue1 flex justify-center lg:justify-start items-center gap-1">
                                     <i class="icon-telegram w-6 h-6"></i>
                                     novinrenter
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="duration-200 hover:text-blue1 flex items-center gap-1">
+                                <a href="#" class="duration-200 hover:text-blue1 flex justify-center lg:justify-start items-center gap-1">
                                     <i class="icon-twitter w-6 h-6"></i>
                                     novinrenter
                                 </a>
@@ -706,10 +837,10 @@
                     </div>
                 </div>
                 <hr class="block bg-black my-5" />
-                <h2 class="text-dark1 font-irsansExtra text-xl mb-3">نوین رنتر، اجاره وسایل و تجهیزات نمایشگاهی و مراسم
+                <h2 class="text-dark1 font-irsansExtra text-base lg:text-xl mb-3">نوین رنتر، اجاره وسایل و تجهیزات نمایشگاهی و مراسم
                 </h2>
                 <div id="footerContent"
-                    class="relative text-dark1 text-sm font-irsans leading-7 max-h-32 overflow-hidden">
+                    class="relative text-dark1 text-xs lg:text-sm font-irsans leading-6 lg:leading-7 max-h-32 overflow-hidden">
                     <p>
                         نوین رنتر، پلتفرمی برای اجاره تجهیزات نمایشگاهی و تجهیزات مراسم در تهران است. شما می توانید با
                         اجاره روزانه وسایل از این سایت به راحتی هر آنچه برای اجرای یک مراسم ایده آل یا یک نمایشگاه درخور
