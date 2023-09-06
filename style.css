@@ -73,6 +73,10 @@ i[class*="icon-"] {
     background-image: url('images/icons/search.svg');
 }
 
+.icon-search2 {
+    background-image: url('images/icons/search2.svg');
+}
+
 .icon-printer {
     background-image: url('images/icons/printer.svg');
 }
@@ -83,6 +87,14 @@ i[class*="icon-"] {
 
 .icon-chevron-bottom {
     background-image: url('images/icons/chevron-bottom.svg');
+}
+
+.icon-chevron-left2 {
+    background-image: url('images/icons/chevron-left2.svg');
+}
+
+.icon-arrow-left {
+    background-image: url('images/icons/arrow-left.svg');
 }
 
 .icon-instagram {
@@ -129,10 +141,6 @@ header li.menu-item-has-children>a::after {
     height: 12px;
     background: url('images/icons/chevron-bottom.svg') no-repeat center center;
     background-size: cover;
-    filter: invert(1);
-    -webkit-filter: invert(1);
-    position: absolute;
-    left: 15px;
 }
 
 #mobile-menu .menu-item-has-children span::after {
@@ -313,6 +321,15 @@ header li.menu-item-has-children>a::after {
     #single-content ul, #single-content ol {
         font-size: 14px;
         line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    header li.menu-item-has-children>a::after {
+        filter: invert(1);
+        -webkit-filter: invert(1);
+        position: absolute;
+        left: 15px;
     }
 }
 
