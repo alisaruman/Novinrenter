@@ -277,4 +277,19 @@ $(document).ready(function () {
     });
   }
   // related products slider
+
+  // archive product desc opener handler
+  $("#archive-product-top #desc-opener").click(function() {
+    if($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this).find("i").removeClass("rotate-180");
+      $("#archive-product-top #archive-desc").addClass("max-h-[100px]");
+    }
+    else {
+      $(this).addClass("active");
+      $(this).find("i").addClass("rotate-180");
+      $("#archive-product-top #archive-desc").removeClass("max-h-[100px]");
+    }
+  });
+  // archive product desc opener handler
 });
