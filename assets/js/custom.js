@@ -282,11 +282,13 @@ $(document).ready(function () {
   $("#archive-product-top #desc-opener").click(function() {
     if($(this).hasClass("active")) {
       $(this).removeClass("active");
+      $(this).addClass("bg-gradient-to-t");
       $(this).find("i").removeClass("rotate-180");
       $("#archive-product-top #archive-desc").addClass("max-h-[100px]");
     }
     else {
       $(this).addClass("active");
+      $(this).removeClass("bg-gradient-to-t");
       $(this).find("i").addClass("rotate-180");
       $("#archive-product-top #archive-desc").removeClass("max-h-[100px]");
     }

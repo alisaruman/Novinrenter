@@ -358,234 +358,180 @@
     </header>
     <!-- header -->
 
-    <!-- archive top -->
-    <section id="archive-top" class="py-10">
+    <!-- breacrumb -->
+    <section id="breadcrumb" class="py-6 lg:pb-12">
         <div class="container">
-            <h1 class="font-irsansExtra text-primary text-3xl text-center mb-3">وبلاگ</h1>
-            <p
-                class="w-full md:w-9/12 lg:w-6/12 table mx-auto mb-5 text-gray1 text-sm font-irsans leading-7 text-center">
-                شما می‌توانید از آخرین اخبار و مقالات مرتبط با اجاره وسایل مطلع شوید. چه اجاره‌دهنده‌ای باشید که به
-                دنبال راهکارهای بهینه برای به اشتراک گذاشتن وسایل خود با دیگران هستید
-            </p>
-            <form>
-                <div class="relative w-full md:w-6/12 lg:w-4/12 mx-auto">
-                    <i class="icon-search2 w-6 h-6 absolute top-1/2 right-5 -translate-y-2/4"></i>
-                    <input type="text" name="s" placeholder="جستجو ..."
-                        class="w-full rounded-10 p-5 bg-white border border-gray4 pr-16 text-primary placeholder-gray1 text-sm font-irsans shadow-searchInset">
-                </div>
-            </form>
+            <ul id="breadcrumb" class="flex flex-wrap lg:flex-nowrap gap-2 font-irsans text-xs text-dark1">
+                <li class="flex items-center gap-2">
+                    <a href="#" class="duration-200 hover:text-blue1">خانه</a>
+                    <i class="icon-chevron-left w-3 h-3"></i>
+                </li>
+                <li class="flex items-center gap-2">
+                    <a href="#" class="duration-200 hover:text-blue1">میز و صندلی</a>
+                    <i class="icon-chevron-left w-3 h-3"></i>
+                </li>
+                <li class="flex items-center gap-2 text-gray1">
+                    <span>صندلی جک دار مدل چرم و چو</span>
+                </li>
+            </ul>
         </div>
     </section>
-    <!-- archive top -->
+    <!-- breadcrumb -->
 
-    <!-- archive posts -->
-
-    <section id="archive-posts">
+    <!-- single blog -->
+    <section id="single-blog">
         <div class="container">
-            <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-3">
+            <div class="w-full flex flex-col lg:flex-row gap-7">
+                <div class="w-full lg:w-7/12 xl:w-8/12">
+                    <div class="bg-white shadow-main px-5 py-7 rounded-10">
+                        <img src="images/temp/big-post1.png" alt="پست" class="w-full h-auto rounded-10">
+                        <h1 class="pt-6 pb-6 lg:pb-12 text-black font-irsansExtra text-base lg:text-xl">
+                            تلویزیون شهری و روش هایی برای گرفتن بهترین نتیجه از آن 
+                        </h1>
+                        <div id="single-content">
+                            <h2>اچ دو لورم</h2>
+                            <h3>اچ سه لورم</h3>
+                            <h4>اچ چهار لورم</h4>
+                            <h5>اچ پنج لورم</h5>
+                            <h6>اچ شش لورم</h6>
+                            <p>
+                                همان طور که می‌دانید شرایط دریافت وام گاهی آنقدر دشوار است که متقاضیان امکان انجام آن‌ها را
+                                نخواهند داشت و یا این که زمان کافی برای طی کردن مراحل مختلف اخذ وام را در اختیار ندارند.
+                                همین موضوع سبب می‌شود که برخی از آن‌ها علی رغم نیاز به وام از دریافت آن منصرف شوند. اما خبر
+                                خوب این است که در حال حاضر با وام آنلاین می‌توان خیلی سریع و بی‌دردسر مبلغی را دریافت کرد و
+                                از آن برای خرید از فروشگاه‌های آنلاین یا از دستگاه‌های کارت خوان بهره‌مند شد. در ادامه این
+                                مطلب سعی داریم که بهترین <a href="#">وام آنلاین</a> در ایران را به شما معرفی کنیم و مزایای
+                                آن را مورد بررسی
+                                قرار دهیم. با ما همراه باشید.
+                            </p>
+                            <img src="images/temp/post2.png" />
+                            <img src="images/temp/post3.png" class="aligncenter" />
+                            <ul>
+                                <li>آیتم اول</li>
+                                <li>آیتم اول</li>
+                                <li>آیتم اول</li>
+                                <li>آیتم اول</li>
+                                <li>آیتم اول</li>
+                            </ul>
+                            <ol>
+                                <li>آیتم نشانه دار</li>
+                                <li>آیتم نشانه دار</li>
+                                <li>آیتم نشانه دار</li>
+                                <li>آیتم نشانه دار</li>
+                                <li>آیتم نشانه دار</li>
+                            </ol>
+                        </div>
 
-                <div class="w-full">
-                    <div class="item w-full bg-white rounded-10 shadow-main p-3">
-                        <a href="#" title="پست اول">
-                            <img src="images/temp/post1.png" alt="پست اول" class="w-full h-auto rounded-10" />
-                        </a>
-                        <a href="#">
-                            <h3
-                                class="lg:line-clamp-2 lg:h-14 font-irsansExtra text-black text-base pt-3 duration-200 hover:text-secondary">
-                                تلویزیون شهری و روش هایی برای گرفتن بهترین نتیجه از آن
-                            </h3>
-                        </a>
-                        <p class="xl:line-clamp-3 text-gray1 text-sm py-3 leading-7">
-                            از زمان معرفی تلویزیون های شهری از دهه ها پیش تا کنون، تلویزیون شهری یا Video Wall نقش به
-                            سزایی در انتقال اطلاعات به صورت گسترده در محیط نمایشگاه...
-                        </p>
-                        <div class="flex items-center justify-between font-irsans">
-                            <a href="#" class="text-sm text-blue1 duration-200 hover:text-secondary">اجاره تلویزیون
-                                شهری</a>
-                            <a href="#"
-                                class="py-1 px-4 text-sm text-black flex items-center gap-3 border-r border-gray4">
-                                ادامه مطلب
-                                <i class="icon-chevron-left2 w-3 h-3"></i>
-                            </a>
+                        <div id="info" class="w-full flex flex-col lg:flex-row gap-7 lg:gap-0 items-center justify-between pt-6 border-t border-gray4">
+                            <div class="flex items-center gap-3 font-irsans text-xs lg:text-sm">
+                                <a href="#" class="text-blue1">
+                                    اجاره تلویزیون شهری
+                                </a>
+                                <div class="w-0 h-8 border-l border-gray4"></div>
+                                <span class="text-gray1">
+                                    تاریخ انتشار: ۲۰ مرداد ۱۳۹۷
+                                </span>
+                            </div>
+                            <div class="flex items-center gap-5">
+                                <a href="#" class="flex">
+                                    <i class="icon-single-whatsapp w-6 h-6"></i>
+                                </a>
+                                <a href="#" class="flex">
+                                    <i class="icon-single-twitter w-6 h-6"></i>
+                                </a>
+                                <a href="#" class="flex">
+                                    <i class="icon-single-telegram w-6 h-6"></i>
+                                </a>
+                                <a href="#" class="flex">
+                                    <i class="icon-single-linkedin w-6 h-6"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="w-full">
-                    <div class="item w-full bg-white rounded-10 shadow-main p-3">
-                        <a href="#" title="پست اول">
-                            <img src="images/temp/post2.png" alt="پست اول" class="w-full h-auto rounded-10" />
-                        </a>
-                        <a href="#">
-                            <h3
-                                class="lg:line-clamp-2 lg:h-14 font-irsansExtra text-black text-base pt-3 duration-200 hover:text-secondary">
-                                چگونه با اجاره تجهیزات مراسم برای برگزاری جشن و رویداد سازمانی برنامه ریزی کنیم؟
-                            </h3>
-                        </a>
-                        <p class="xl:line-clamp-3 text-gray1 text-sm py-3 leading-7">
-                            از زمان معرفی تلویزیون های شهری از دهه ها پیش تا کنون، تلویزیون شهری یا Video Wall نقش به
-                            سزایی در انتقال اطلاعات به صورت گسترده در محیط نمایشگاه...
-                        </p>
-                        <div class="flex items-center justify-between font-irsans">
-                            <a href="#" class="text-sm text-blue1 duration-200 hover:text-secondary">اجاره تلویزیون
-                                شهری</a>
-                            <a href="#"
-                                class="py-1 px-4 text-sm text-black flex items-center gap-3 border-r border-gray4">
-                                ادامه مطلب
-                                <i class="icon-chevron-left2 w-3 h-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full">
-                    <div class="item w-full bg-white rounded-10 shadow-main p-3">
-                        <a href="#" title="پست اول">
-                            <img src="images/temp/post3.png" alt="پست اول" class="w-full h-auto rounded-10" />
-                        </a>
-                        <a href="#">
-                            <h3
-                                class="lg:line-clamp-2 lg:h-14 font-irsansExtra text-black text-base pt-3 duration-200 hover:text-secondary">
-                                چگونه با اجاره تجهیزات مراسم برای برگزاری جشن و رویداد سازمانی برنامه ریزی کنیم؟
-                            </h3>
-                        </a>
-                        <p class="xl:line-clamp-3 text-gray1 text-sm py-3 leading-7">
-                            از زمان معرفی تلویزیون های شهری از دهه ها پیش تا کنون، تلویزیون شهری یا Video Wall نقش به
-                            سزایی در انتقال اطلاعات به صورت گسترده در محیط نمایشگاه...
-                        </p>
-                        <div class="flex items-center justify-between font-irsans">
-                            <a href="#" class="text-sm text-blue1 duration-200 hover:text-secondary">اجاره تلویزیون
-                                شهری</a>
-                            <a href="#"
-                                class="py-1 px-4 text-sm text-black flex items-center gap-3 border-r border-gray4">
-                                ادامه مطلب
-                                <i class="icon-chevron-left2 w-3 h-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full">
-                    <div class="item w-full bg-white rounded-10 shadow-main p-3">
-                        <a href="#" title="پست اول">
-                            <img src="images/temp/post2.png" alt="پست اول" class="w-full h-auto rounded-10" />
-                        </a>
-                        <a href="#">
-                            <h3
-                                class="lg:line-clamp-2 lg:h-14 font-irsansExtra text-black text-base pt-3 duration-200 hover:text-secondary">
-                                تلویزیون شهری و روش هایی برای گرفتن بهترین نتیجه از آن
-                            </h3>
-                        </a>
-                        <p class="xl:line-clamp-3 text-gray1 text-sm py-3 leading-7">
-                            از زمان معرفی تلویزیون های شهری از دهه ها پیش تا کنون، تلویزیون شهری یا Video Wall نقش به
-                            سزایی در انتقال اطلاعات به صورت گسترده در محیط نمایشگاه...
-                        </p>
-                        <div class="flex items-center justify-between font-irsans">
-                            <a href="#" class="text-sm text-blue1 duration-200 hover:text-secondary">اجاره تلویزیون
-                                شهری</a>
-                            <a href="#"
-                                class="py-1 px-4 text-sm text-black flex items-center gap-3 border-r border-gray4">
-                                ادامه مطلب
-                                <i class="icon-chevron-left2 w-3 h-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full">
-                    <div class="item w-full bg-white rounded-10 shadow-main p-3">
-                        <a href="#" title="پست اول">
-                            <img src="images/temp/post1.png" alt="پست اول" class="w-full h-auto rounded-10" />
-                        </a>
-                        <a href="#">
-                            <h3
-                                class="lg:line-clamp-2 lg:h-14 font-irsansExtra text-black text-base pt-3 duration-200 hover:text-secondary">
-                                تلویزیون شهری و روش هایی برای گرفتن بهترین نتیجه از آن
-                            </h3>
-                        </a>
-                        <p class="xl:line-clamp-3 text-gray1 text-sm py-3 leading-7">
-                            از زمان معرفی تلویزیون های شهری از دهه ها پیش تا کنون، تلویزیون شهری یا Video Wall نقش به
-                            سزایی در انتقال اطلاعات به صورت گسترده در محیط نمایشگاه...
-                        </p>
-                        <div class="flex items-center justify-between font-irsans">
-                            <a href="#" class="text-sm text-blue1 duration-200 hover:text-secondary">اجاره تلویزیون
-                                شهری</a>
-                            <a href="#"
-                                class="py-1 px-4 text-sm text-black flex items-center gap-3 border-r border-gray4">
-                                ادامه مطلب
-                                <i class="icon-chevron-left2 w-3 h-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full">
-                    <div class="item w-full bg-white rounded-10 shadow-main p-3">
-                        <a href="#" title="پست اول">
-                            <img src="images/temp/post3.png" alt="پست اول" class="w-full h-auto rounded-10" />
-                        </a>
-                        <a href="#">
-                            <h3
-                                class="lg:line-clamp-2 lg:h-14 font-irsansExtra text-black text-base pt-3 duration-200 hover:text-secondary">
-                                تلویزیون شهری و روش هایی برای گرفتن بهترین نتیجه از آن
-                            </h3>
-                        </a>
-                        <p class="xl:line-clamp-3 text-gray1 text-sm py-3 leading-7">
-                            از زمان معرفی تلویزیون های شهری از دهه ها پیش تا کنون، تلویزیون شهری یا Video Wall نقش به
-                            سزایی در انتقال اطلاعات به صورت گسترده در محیط نمایشگاه...
-                        </p>
-                        <div class="flex items-center justify-between font-irsans">
-                            <a href="#" class="text-sm text-blue1 duration-200 hover:text-secondary">اجاره تلویزیون
-                                شهری</a>
-                            <a href="#"
-                                class="py-1 px-4 text-sm text-black flex items-center gap-3 border-r border-gray4">
-                                ادامه مطلب
-                                <i class="icon-chevron-left2 w-3 h-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
+                    </div>
+                </div>
+                <div class="w-full lg:w-5/12 xl:w-4/12">
+                    <div class="bg-white shadow-main p-5 rounded-10 sticky top-5">
+                        <div class="block relative h-6 border-b border-gray2 mb-10">
+                            <span class="font-irsansExtra text-black text-base absolute top-1/2 bg-white pl-3">مطالب
+                                مرتبط</span>
+                        </div>
+                        <div class="group w-full flex items-center gap-3 my-2">
+                            <a href="#" title="تایتل" class="w-3/12">
+                                <img src="images/temp/related2.png" alt="مرتبط"
+                                    class="w-full h-auto rounded-10 duration-200 group-hover:brightness-50" />
+                            </a>
+                            <div class="w-9/12 flex flex-col">
+                                <a href="#" class="text-dark1 font-irsansExtra text-sm leading-7 line-clamp-2 group-hover:text-primary">
+                                    چگونه با اجاره تجهیزات مراسم برای برگزاری جشن و رویداد سازمانی برنامه ریزی کنیم؟
+                                </a>
+                                <a href="#" class="text-gray1 font-irsans text-sm mt-3">
+                                    اجاره تلویزیون شهری
+                                </a>
+                            </div>
+                        </div>
+                        <div class="group w-full flex items-center gap-3 my-2">
+                            <a href="#" title="تایتل" class="w-3/12">
+                                <img src="images/temp/related2.png" alt="مرتبط"
+                                    class="w-full h-auto rounded-10 duration-200 group-hover:brightness-50" />
+                            </a>
+                            <div class="w-9/12 flex flex-col">
+                                <a href="#" class="text-dark1 font-irsansExtra text-sm leading-7 line-clamp-2 group-hover:text-primary">
+                                    چگونه با اجاره تجهیزات مراسم برای برگزاری جشن و رویداد سازمانی برنامه ریزی کنیم؟
+                                </a>
+                                <a href="#" class="text-gray1 font-irsans text-sm mt-3">
+                                    اجاره تلویزیون شهری
+                                </a>
+                            </div>
+                        </div>
+                        <div class="group w-full flex items-center gap-3 my-2">
+                            <a href="#" title="تایتل" class="w-3/12">
+                                <img src="images/temp/related2.png" alt="مرتبط"
+                                    class="w-full h-auto rounded-10 duration-200 group-hover:brightness-50" />
+                            </a>
+                            <div class="w-9/12 flex flex-col">
+                                <a href="#" class="text-dark1 font-irsansExtra text-sm leading-7 line-clamp-2 group-hover:text-primary">
+                                    چگونه با اجاره تجهیزات مراسم برای برگزاری جشن و رویداد سازمانی برنامه ریزی کنیم؟
+                                </a>
+                                <a href="#" class="text-gray1 font-irsans text-sm mt-3">
+                                    اجاره تلویزیون شهری
+                                </a>
+                            </div>
+                        </div>
+                        <div class="group w-full flex items-center gap-3 my-2">
+                            <a href="#" title="تایتل" class="w-3/12">
+                                <img src="images/temp/related2.png" alt="مرتبط"
+                                    class="w-full h-auto rounded-10 duration-200 group-hover:brightness-50" />
+                            </a>
+                            <div class="w-9/12 flex flex-col">
+                                <a href="#" class="text-dark1 font-irsansExtra text-sm leading-7 line-clamp-2 group-hover:text-primary">
+                                    چگونه با اجاره تجهیزات مراسم برای برگزاری جشن و رویداد سازمانی برنامه ریزی کنیم؟
+                                </a>
+                                <a href="#" class="text-gray1 font-irsans text-sm mt-3">
+                                    اجاره تلویزیون شهری
+                                </a>
+                            </div>
+                        </div>
+                        <div class="group w-full flex items-center gap-3 my-2">
+                            <a href="#" title="تایتل" class="w-3/12">
+                                <img src="images/temp/related2.png" alt="مرتبط"
+                                    class="w-full h-auto rounded-10 duration-200 group-hover:brightness-50" />
+                            </a>
+                            <div class="w-9/12 flex flex-col">
+                                <a href="#" class="text-dark1 font-irsansExtra text-sm leading-7 line-clamp-2 group-hover:text-primary">
+                                    چگونه با اجاره تجهیزات مراسم برای برگزاری جشن و رویداد سازمانی برنامه ریزی کنیم؟
+                                </a>
+                                <a href="#" class="text-gray1 font-irsans text-sm mt-3">
+                                    اجاره تلویزیون شهری
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- pagination -->
-    <div id="pagination"
-        class="w-full p-5 flex flex-wrap lg:flex-nowrap items-center justify-center gap-3 lg:gap-5 mt-6 mb-12 font-irsans">
-        <a href="#" class="flex items-center gap-2">
-            <i class="icon-arrow-left w-4 h-4 rotate-180"></i>
-            <span class="text-sm text-gray5">قبلی</span>
-        </a>
-        <ul class="px-3 flex items-center border-l border-r border-gray2 gap-2 text-gray5 text-sm">
-            <li>
-                <a href="#"
-                    class="flex items-center justify-center rounded-10 w-5 md:w-8 h-5 md:h-8 duration-200 hover:bg-blue1 hover:text-white">۱</a>
-            </li>
-            <li>
-                <a href="#"
-                    class="flex items-center justify-center rounded-10 w-5 md:w-8 h-5 md:h-8 duration-200 hover:bg-blue1 hover:text-white">۲</a>
-            </li>
-            <li>
-                <a href="#"
-                    class="flex items-center justify-center rounded-10 w-5 md:w-8 h-5 md:h-8 duration-200 hover:bg-blue1 hover:text-white">۳</a>
-            </li>
-            <li>
-                <a href="#"
-                    class="flex items-center justify-center rounded-10 w-5 md:w-8 h-5 md:h-8 duration-200 hover:bg-blue1 hover:text-white">۴</a>
-            </li>
-            <li>
-                <a href="#"
-                    class="flex items-center justify-center rounded-10 w-5 md:w-8 h-5 md:h-8 duration-200 hover:bg-blue1 hover:text-white">۵</a>
-            </li>
-            <li>
-                <a href="#"
-                    class="flex items-center justify-center rounded-10 w-5 md:w-8 h-5 md:h-8 duration-200 hover:bg-blue1 hover:text-white">۶</a>
-            </li>
-        </ul>
-        <a href="#" class="flex items-center gap-2">
-            <span class="text-sm text-gray5">بعدی</span>
-            <i class="icon-arrow-left w-4 h-4"></i>
-        </a>
-    </div>
-    <!-- pagination -->
-
-    <!-- archive posts -->
+    <!-- single blog -->
 
     <!-- advantages -->
     <section id="advantages" class="my-10">

@@ -133,6 +133,22 @@ i[class*="icon-"] {
     background-image: url('images/icons/arrow-left.svg');
 }
 
+.icon-single-linkedin {
+    background-image: url('images/icons/single-linkedin.svg');
+}
+
+.icon-single-telegram {
+    background-image: url('images/icons/single-telegram.svg');
+}
+
+.icon-single-whatsapp {
+    background-image: url('images/icons/single-whatsapp.svg');
+}
+
+.icon-single-twitter {
+    background-image: url('images/icons/single-twitter.svg');
+}
+
 .icon-instagram {
     background-image: url('images/icons/instagram.svg');
 }
