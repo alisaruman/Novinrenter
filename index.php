@@ -78,8 +78,7 @@
     <!-- events -->
     <section id="events" class="py-5">
 
-        <div id="lightbox-cont"
-            class="z-50 fixed invisible opacity-0 duration-300 w-full h-full top-0 left-0 backdrop-brightness-[25%] backdrop-blur flex items-center justify-center cursor-pointer">
+        <div id="lightbox-cont" class="z-50 fixed invisible opacity-0 duration-300 w-full h-full top-0 left-0 backdrop-brightness-[25%] backdrop-blur flex items-center justify-center cursor-pointer">
             <img src="" alt="ایونت" class="max-w-full max-h-full">
         </div>
 
@@ -92,7 +91,7 @@
                 <div class="swiper-wrapper">
 <?php while(have_rows("events","option")){ the_row(); ?>
                     <div class="swiper-slide relative rounded-15 overflow-hidden">
-                        <a href="<?=get_sub_field("url"); ?>" data-target="<?=get_sub_field("pic"); ?>" class="lightboxer">
+                        <a href="<?=get_sub_field("pic"); ?>" data-target="<?=get_sub_field("pic"); ?>" class="lightboxer">
                             <img src="<?=get_sub_field("thumb"); ?>" alt="<?=get_sub_field("title"); ?>" class="w-full h-auto" />
                             <div class="absolute w-full bottom-0 left-0 h-1/2 flex items-end justify-center pb-6 bg-gradient-to-t from-black to-transparent text-white text-sm">
                                 <?=get_sub_field("title"); ?>

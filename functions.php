@@ -56,4 +56,54 @@ function page_navigation_f($pages = '', $range = 2){
         echo "</div>\n";
     }
 }
+
+
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page(array(
+        'page_title'    => 'تنظیمات قالب',
+        'menu_title'    => 'تنظیمات قالب',
+        'menu_slug'     => 'nrenter_settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title'    => 'برگه ها',
+        'menu_title'    => 'برگه ها',
+        'menu_slug'     => 'nrenter_pages',
+        'parent_slug'   => 'nrenter_settings',
+    ));
+    acf_add_options_sub_page(array(
+        'page_title'    => 'شبکه های اجتماعی',
+        'menu_title'    => 'شبکه های اجتماعی',
+        'menu_slug'     => 'nrenter_social',
+        'parent_slug'   => 'nrenter_settings',
+    ));
+    acf_add_options_sub_page(array(
+        'page_title'    => 'اسلایدر',
+        'menu_title'    => 'اسلایدر',
+        'menu_slug'     => 'nrenter_slider',
+        'parent_slug'   => 'nrenter_settings',
+    ));
+    acf_add_options_sub_page(array(
+        'page_title'    => 'دسته بندی محصولات',
+        'menu_title'    => 'دسته بندی محصولات',
+        'menu_slug'     => 'nrenter_cats',
+        'parent_slug'   => 'nrenter_settings',
+    ));
+    acf_add_options_sub_page(array(
+        'page_title'    => 'ایونت ها',
+        'menu_title'    => 'ایونت ها',
+        'menu_slug'     => 'nrenter_events',
+        'parent_slug'   => 'nrenter_settings',
+    ));
+    acf_add_options_sub_page(array(
+        'page_title'    => 'سوالات متداول',
+        'menu_title'    => 'سوالات متداول',
+        'menu_slug'     => 'nrenter_faq',
+        'parent_slug'   => 'nrenter_settings',
+    ));
+
+}
 ?>
